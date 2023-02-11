@@ -31,6 +31,19 @@
 		</footer>
 
 		<script src="./node_modules/qrcode/build/qrcode.js"></script>
-		<script src="./script.js"></script>
+		<script>
+			const canvas = document.querySelector("#canvas");
+			const url = document.querySelector("#url");
+
+			url.addEventListener("keyup", (e) => {
+				if (e.key === "Enter") {
+					generateQR();
+				}
+			});
+
+			const generateQR = () => {
+				QRCode.toCanvas(canvas, url.value);
+			};
+		</script>
 	</body>
 </html>
