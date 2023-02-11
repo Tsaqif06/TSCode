@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+*,
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: #121212;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container > h1 {
+	position: absolute;
+	top: 30px;
+	color: #eaeaea;
+	font-weight: bolder;
+	font-family: "Josefin Sans", sans-serif;
+	text-align: center;
+}
+
+.wrapper {
+	border-radius: 27px;
+	background: #111111;
+	box-shadow: 26px 26px 52px #0a0a0a, -26px -26px 52px #181818;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	width: 400px;
+	height: 450px;
+	z-index: 10;
+}
+
+canvas {
+	border-radius: 47px;
+	background: #eaeaea;
+	box-shadow: 0 5px 0 #a4a4a4;
+	padding: 20px;
+}
+
+.wrapper > input {
+	margin-top: 25px;
+	padding: 10px 5px 8px 10px;
+	border-radius: 10px;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+}
+
+footer > p,
+footer > p > a {
+	color: #eaeaea;
+}
+
+footer > p > a:hover {
+	transition: all 0.3s ease-in;
+	color: rgb(17, 42, 187);
+}
+
+@media screen and (max-width: 440px) {
+	.wrapper {
+		width: 320px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+}
